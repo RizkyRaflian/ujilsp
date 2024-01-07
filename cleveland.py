@@ -59,7 +59,6 @@ fill_values = {'ca': meanca, 'thal': meanthal}
 
 
 df_clean = df_selected.fillna(value=fill_values)
-df_clean.drop_duplicates(inplace=True)
 
 X = df_clean.drop("target", axis=1)
 y = df_clean['target']
